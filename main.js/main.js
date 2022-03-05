@@ -28,6 +28,9 @@ step.forEach( element => {
     let areaFigure = (area * count) / element
     console.log('Шаг: ',element, '\nПлощадь прямоугольника равна:',areaRectange)
     console .log('Площадь фигуры равна:',areaFigure)
+    let I = 3.9956;
+    let error = (areaFigure - I)/I;
+    console.log('Погрешность:',error)
     count = 0;
     sum = 0;
 })
